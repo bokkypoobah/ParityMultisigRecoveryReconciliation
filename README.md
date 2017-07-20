@@ -56,4 +56,20 @@ A reconciliation of WHG's and my token transactions shows one small error in lin
 
 My ethers transactions are in [results/ethers.tsv](results/ethers.tsv).
 
-I'll reconcile to WHG's calculations when WHG provides their calculations.
+LefterisJP's ethers transactions are in [results/ethers-LefterisJP.csv](results/ethers-LefterisJP.csv) from [https://github.com/LefterisJP/multisigwallet_whitehat_movements_verification/blob/master/multisig_data.csv](https://github.com/LefterisJP/multisigwallet_whitehat_movements_verification/blob/master/multisig_data.csv).
+
+A reconciliation of LefterisJP and my ethers transactions is available in [results/ethersReconciliation.xls](results/ethersReconciliation.xls) and the numbers match exactly.
+
+<br />
+
+<hr />
+
+## Further Information
+
+See [A Modified Version of a Common Multisig Had A Vulnerability - The WHG Took Action & Will Return the Funds](https://www.reddit.com/r/ethereum/comments/6obofq/a_modified_version_of_a_common_multisig_had_a/).
+
+<br />
+
+<br />
+
+(c) BokkyPooBah / Bok Consulting Pty Ltd, White Hat Group and LefterisJP - July 21 2017
