@@ -15,7 +15,18 @@ The hacker used this exploit to transfer amounts from the following accounts to 
 
 ETH/USD rate of 213.942 at 20:45 Jul 20 2017 AEST.
 
+Following is a balance of the hacker's account, with 7 lots of ETH 10,000 already transferred out, at 21:31 Jul 20 2017 AEST: 
+
+![](images/BlackHatAccount-20170720-213113.png)
+
+<br />
+
+<hr />
+
 ## White Hat Group
 
-The White Hat Group (WHG) found [570 contracts with the same byte code](https://etherscan.io/find-similiar-contracts?a=0xbcb2797f9a74d9099d6077c743feb3bc812eb2a4) and drained the contents using the same exploit as used by the hacker into 
+The White Hat Group (WHG) found [570 contracts with the same byte code](https://etherscan.io/find-similiar-contracts?a=0xbcb2797f9a74d9099d6077c743feb3bc812eb2a4) and drained about USD 164 million in ETH and tokens using the same exploit as used by the hacker into [0x1dba1131000664b884a1ba238464159892252d3a](https://etherscan.io/address/0x1dba1131000664b884a1ba238464159892252d3a).
 
+The first WHG action was in block [4044976](https://etherscan.io/block/4044976) and the last action was in block [4047669](https://etherscan.io/block/4047669) and here is the balance of the WHG account at 21:20 Jul 20 2017 AEST:
+
+![](images/WhiteHatAccount-20170720-212053.png)
