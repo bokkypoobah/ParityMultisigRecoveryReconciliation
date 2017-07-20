@@ -10,8 +10,8 @@ var whgWallet = "0x1dba1131000664b884a1ba238464159892252d3a";
 var startBlock = 4044976;
 var endBlock = 4047669;
 // endBlock = parseInt(startBlock) + 10;
-// var startBlock = 4045185;
-// var endBlock = 4045185;
+// var startBlock = 4045689;
+// var endBlock = 4045689;
 
 console.log("TOKEN: TokenAddress\tTokenSymbol\tWallet\tAmount");
 console.log("ETHER: Wallet\tAmount");
@@ -21,7 +21,7 @@ for (var blockNumber = startBlock; blockNumber <= endBlock; blockNumber++) {
     block.transactions.forEach(function(tx) {
         if (tx.from == whgWallet) {
             var sig = tx.input.substr(0, 10);
-            // console.log(JSON.stringify(tx));
+            console.log(JSON.stringify(tx));
             if (sig == initWalletSig) {
                 // console.log("  initWallet");
             } else if (sig == executeSig) {
@@ -46,7 +46,7 @@ for (var blockNumber = startBlock; blockNumber <= endBlock; blockNumber++) {
                 var data4 = data.substr(196+8, 60);
                 var dataTransfer = data.substr(128, 8); 
                 if (data1 == "0000000000000000000000000000000000000000000000000000000000000000") {
-                    var value = new BigNumber(tx.input.substr(10 + 64, 64), 16).shift(-18);
+                    var value = new BigNumber(tx.input.substr(10 + 64, 64), 16).toFixed(0);
                     ccy = "ETH";
                     // console.log("  transfer from " + contract + " to 0x" + to + " ccy " + ccy + " value " + value + " data '" + data + "'");
                     if (value > 0) {
@@ -63,8 +63,12 @@ for (var blockNumber = startBlock; blockNumber <= endBlock; blockNumber++) {
                         // console.log(data3);
                         //console.log(data4 + " " + new BigNumber(data4, 16).toFixed(0));
                         value = new BigNumber(data4, 16).toFixed(0);
-                        if (to == "e0b7927c4af23765cb51314a0e0521a9645f0e2a") {
+                        if (tokenAddress == "e0b7927c4af23765cb51314a0e0521a9645f0e2a") {
                             ccy = "DGD";
+                        } else if (tokenAddress == "86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0") {
+                            ccy = "EOS";
+                        } else if (tokenAddress == "48c80f1f4d53d5951e5d5438b54cba84f29f32a5") {
+                            ccy = "REP";
                         } else {
                             try { 
                                 ccy = token.symbol();
@@ -74,7 +78,7 @@ for (var blockNumber = startBlock; blockNumber <= endBlock; blockNumber++) {
                         }
                         // console.log("  transfer from " + contract + " to 0x" + to + " ccy " + ccy + " value " + value + " tokenAddress " + to);
                         if (value > 0) {
-                            console.log("TOKEN: " + tokenAddress + "\t" + ccy + "\t" + contract + "\t" + value);
+                            console.log("TOKEN: 0x" + tokenAddress + "\t" + ccy + "\t" + contract + "\t" + value);
                         }
                     } else {
                         var value = new BigNumber(tx.input.substr(10 + 64, 64), 16).shift(-18);

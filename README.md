@@ -37,8 +37,23 @@ The first WHG action was in block [4044976](https://etherscan.io/block/4044976) 
 
 ## Reconciliation
 
+I've use the [scripts/getWHGTxs.sh](scripts/getWHGTxs.sh) to extract all transactions moving ETH and tokens from the vulnerable Parity multisig wallets into the WHG's wallet.
+
+NOTE: There are some small ETH transactions missing - I'll have to fix up the script to find these transactions.
+
+<br />
+
+### Tokens
 The WHG token transactions are in [results/tokensRefunds-WHG.tsv](results/tokensRefunds-WHG.tsv).
 
 My token transactions are in [results/tokens.tsv](results/tokens.tsv).
 
 A reconciliation of WHG's and my token transactions shows one small error in line 51 Monaco in the WHG's calculations - see [results/tokensReconcilation.xls](results/tokensReconcilation.xls).
+
+<br />
+
+### Ethers
+
+My ethers transactions are in [results/ethers.tsv](results/ethers.tsv).
+
+I'll reconcile to WHG's calculations when WHG provides their calculations.
