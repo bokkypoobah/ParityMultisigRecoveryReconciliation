@@ -30,3 +30,15 @@ The White Hat Group (WHG) found [570 contracts with the same byte code](https://
 The first WHG action was in block [4044976](https://etherscan.io/block/4044976) and the last action was in block [4047669](https://etherscan.io/block/4047669) and here is the balance of the WHG account at 21:20 Jul 20 2017 AEST:
 
 ![](images/WhiteHatAccount-20170720-212053.png)
+
+<br />
+
+<hr />
+
+## Reconciliation
+
+The WHG token transactions are in [results/tokensRefunds-WHG.tsv](results/tokensRefunds-WHG.tsv).
+
+My token transactions are in [results/tokens.tsv](results/tokens.tsv).
+
+A reconciliation of WHG's and my token transactions shows one small error in line 51 Monaco in the WHG's calculations - see [results/tokensReconcilation.xls](results/tokensReconcilation.xls).
