@@ -54,7 +54,11 @@ Following is a balance of the hacker's account, with 7 lots of ETH 10,000 alread
 
 The White Hat Group (WHG) found [570 contracts with the same byte code](https://etherscan.io/find-similiar-contracts?a=0xbcb2797f9a74d9099d6077c743feb3bc812eb2a4) and drained about USD 164 million in ETH and tokens using the same exploit as used by the hacker into [0x1dba1131000664b884a1ba238464159892252d3a](https://etherscan.io/address/0x1dba1131000664b884a1ba238464159892252d3a).
 
-The first WHG action was in block [4044813](https://etherscan.io/block/4044813) and the last action was in block [4046151](https://etherscan.io/block/4046151) and here is the balance of the WHG account at 21:20 Jul 20 2017 AEST:
+The first WHG action was in block [4044813](https://etherscan.io/block/4044813) at Jul-19-2017 05:27:10 PM +UTC and the last action was in block [4046151](https://etherscan.io/block/4046151) Jul-20-2017 12:25:26 AM +UTC and here is the balance of the WHG account at 21:20 Jul 20 2017 AEST:
+
+The nonce for the first tx in block 4044813 is 630 and the nonce for the last tx in block 4046151 is 4165. A total of 4615 - 630 + 1 = 3986 transactions were executed by the WHG to rescue the ethers and tokens at risk.
+
+Total gas cost for the last 2,000 transactions is 14.58969814 ETH. Etherscan only exported the last 2,000 transactions for this calculation.
 
 ![](images/WhiteHatAccount-20170720-212053.png)
 
@@ -81,6 +85,8 @@ A reconciliation of WHG's and my token transactions shows one small error in lin
 
 My latest token results for comparison with the WHG rescue data is in [results/multisig_rescue_tokens_bokkypoobah.csv](results/multisig_rescue_tokens_bokkypoobah.csv).
 
+Also note that my .csv file numbers have small rounding issues as I used MS Excel to compute the cumulative amounts. See the .tsv file for the exact amounts in weis.
+
 <br />
 
 ### Ethers
@@ -92,6 +98,15 @@ LefterisJP's ethers transactions are in [results/ethers-LefterisJP.csv](results/
 A reconciliation of LefterisJP and my ethers transactions is available in [results/ethersReconciliation.xls](results/ethersReconciliation.xls) and the numbers match exactly.
 
 My latest ethers results for comparison with the WHG rescue data is in [results/multisig_rescue_ether_bokkypoobah.csv](results/multisig_rescue_ether_bokkypoobah.csv).
+
+Note that my ethers data seems to have an incorrect entry when compared to Jordi's data and from manual checking.
+The only difference between mine and Jordis ETH data is that I have an extra amount `0x32bacc8b241fb172fee18bda32527126c6f3c5f7 963930173170731000000`.
+This transaction was picked up by my script because I looked at each transaction in the blocks containing the rescue transactions, and this
+`0x32bacc8b241fb172fee18bda32527126c6f3c5f7` account is not an account that was rescued.
+
+Jordi's file [results/multisig_resque_eth_jordi.csv](results/multisig_resque_eth_jordi.csv) is correct.
+
+Also note that my .csv file numbers have small rounding issues as I used MS Excel to compute the cumulative amounts. See the .tsv file for the exact amounts in weis.
 
 <br />
 
