@@ -14,10 +14,14 @@ var endBlock = 4046151;
 // var endBlock = 4045689;
 
 console.log("TOKEN: TokenAddress\tTokenSymbol\tWallet\tAmount");
+console.log("TOKEN: Unixtime\tDateTime\tTokenAddress\tTokenSymbol\tWallet\tAmount");
 console.log("ETHER: Wallet\tAmount");
+console.log("ETHERTIME: Unixtime\tDateTime\tWallet\tAmount");
 
 for (var blockNumber = startBlock; blockNumber <= endBlock; blockNumber++) {
     var block = eth.getBlock(blockNumber, true);
+    var timestamp = block.timestamp;
+    var date = new Date(timestamp * 1000);
     block.transactions.forEach(function(tx) {
         if (tx.from == whgWallet) {
             var sig = tx.input.substr(0, 10);
@@ -51,6 +55,7 @@ for (var blockNumber = startBlock; blockNumber <= endBlock; blockNumber++) {
                     // console.log("  transfer from " + contract + " to 0x" + to + " ccy " + ccy + " value " + value + " data '" + data + "'");
                     if (value > 0) {
                         console.log("ETHER: " + contract + "\t" + value);
+                        console.log("ETHERTIME: " + contract + "\t" + value);
                     }
                 } else {
                     if (data2 == transferSig) {

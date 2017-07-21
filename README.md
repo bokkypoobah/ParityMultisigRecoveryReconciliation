@@ -1,5 +1,32 @@
 # Parity Multisig Recovery Reconciliation
 
+On Jul 18 2017, a black hat hacker exploited a vulnerability in the multisig wallet deployed from the Parity Ethereum node application, and stole
+USD 32 million in ethers (ETH) from the funds raised in crowdsales by Aeternity, Edgeless ans Swarm city.
+
+The White Hat Group (WHG) scanned the balances for over 500 multisig wallets using the same vulnerable code, then used the same exploit
+to move the ETH and tokens from the wallets into their wallet for safekeeping.
+
+The reconciliation below calculates the ETH and tokens that will be returned to their rightful owners in safer multisig wallets that are
+handed back to the original wallet owners.
+
+<br />
+
+<hr />
+
+## Table Of Contents
+
+* [Black Hat Hacker](#black-hat-hacker)
+* [White Hat Group](#white-hat-group)
+* [Reconciliation](#reconciliation)
+  * [Tokens](#tokens)
+  * [Ethers](#ethers)
+* [How Was The Parity Multisig Compromised?](#how-was-the-parity-multisig-compromised)
+* [Further Information](#further-information)
+
+<br />
+
+<hr />
+
 ## Black Hat Hacker
 A [bug](https://github.com/paritytech/parity/commit/b640df8fbb964da7538eef268dffc125b081a82f) in the Parity multisig wallet was discovered by a (or a group of) black hat hacker(s).
 
@@ -8,9 +35,9 @@ The hacker could then execute a transaction calling the `execute(address _to, ui
 
 The hacker used this exploit to transfer amounts from the following accounts to the hacker(s) account [0xb3764761e297d6f121e79c32a65829cd1ddb4d32](https://etherscan.io/address/0xb3764761e297d6f121e79c32a65829cd1ddb4d32):
 
-* ETH 26,793 (USD 5,732,148.01) from [0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5](https://etherscan.io/address/0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5#internaltx) at Jul-18-2017 10:33:23 PM +UTC in block [4041179](https://etherscan.io/block/4041179) in tx [0x0e0d1647](https://etherscan.io/tx/0x0e0d16475d2ac6a4802437a35a21776e5c9b681a77fef1693b0badbb6afdb083)
-* ETH 44,055 (USD 9,425,214.81) from [0x50126e8fcb9be29f83c6bbd913cc85b40eaf86fc](https://etherscan.io/address/0x50126e8fcb9be29f83c6bbd913cc85b40eaf86fc#internaltx) at Jul-19-2017 12:14:18 PM +UTC in block [4043791](https://etherscan.io/block/4043791) in tx [0x97f76623](https://etherscan.io/tx/0x97f7662322d56e1c54bd1bab39bccf98bc736fcb9c7e61640e6ff1f633637d38)
-* ETH 82,189 (USD 17,583,679.04) from [0xbec591de75b8699a3ba52f073428822d0bfc0d7e](https://etherscan.io/address/0xbec591de75b8699a3ba52f073428822d0bfc0d7e#internaltx) at Jul-19-2017 12:19:36 PM +UTC in block [4043802](https://etherscan.io/block/4043802) in tx [0xeef10fc5](https://etherscan.io/tx/0xeef10fc5170f669b86c4cd0444882a96087221325f8bf2f55d6188633aa7be7c)
+* Edgeless - ETH 26,793 (USD 5,732,148.01) from [0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5](https://etherscan.io/address/0x91efffb9c6cd3a66474688d0a48aa6ecfe515aa5#internaltx) at Jul-18-2017 10:33:23 PM +UTC in block [4041179](https://etherscan.io/block/4041179) in tx [0x0e0d1647](https://etherscan.io/tx/0x0e0d16475d2ac6a4802437a35a21776e5c9b681a77fef1693b0badbb6afdb083)
+* Swarm City - ETH 44,055 (USD 9,425,214.81) from [0x50126e8fcb9be29f83c6bbd913cc85b40eaf86fc](https://etherscan.io/address/0x50126e8fcb9be29f83c6bbd913cc85b40eaf86fc#internaltx) at Jul-19-2017 12:14:18 PM +UTC in block [4043791](https://etherscan.io/block/4043791) in tx [0x97f76623](https://etherscan.io/tx/0x97f7662322d56e1c54bd1bab39bccf98bc736fcb9c7e61640e6ff1f633637d38)
+* æternity - ETH 82,189 (USD 17,583,679.04) from [0xbec591de75b8699a3ba52f073428822d0bfc0d7e](https://etherscan.io/address/0xbec591de75b8699a3ba52f073428822d0bfc0d7e#internaltx) at Jul-19-2017 12:19:36 PM +UTC in block [4043802](https://etherscan.io/block/4043802) in tx [0xeef10fc5](https://etherscan.io/tx/0xeef10fc5170f669b86c4cd0444882a96087221325f8bf2f55d6188633aa7be7c)
 * Total ETH 153,037 (USD 32,741,041.85)
 
 ETH/USD rate of 213.942 at 20:45 Jul 20 2017 AEST.
@@ -27,7 +54,7 @@ Following is a balance of the hacker's account, with 7 lots of ETH 10,000 alread
 
 The White Hat Group (WHG) found [570 contracts with the same byte code](https://etherscan.io/find-similiar-contracts?a=0xbcb2797f9a74d9099d6077c743feb3bc812eb2a4) and drained about USD 164 million in ETH and tokens using the same exploit as used by the hacker into [0x1dba1131000664b884a1ba238464159892252d3a](https://etherscan.io/address/0x1dba1131000664b884a1ba238464159892252d3a).
 
-The first WHG action was in block [4044976](https://etherscan.io/block/4044976) and the last action was in block [4047669](https://etherscan.io/block/4047669) and here is the balance of the WHG account at 21:20 Jul 20 2017 AEST:
+The first WHG action was in block [4044813](https://etherscan.io/block/4044813) and the last action was in block [4046151](https://etherscan.io/block/4046151) and here is the balance of the WHG account at 21:20 Jul 20 2017 AEST:
 
 ![](images/WhiteHatAccount-20170720-212053.png)
 
@@ -39,7 +66,9 @@ The first WHG action was in block [4044976](https://etherscan.io/block/4044976) 
 
 I've use the [scripts/getWHGTxs.sh](scripts/getWHGTxs.sh) to extract all transactions moving ETH and tokens from the vulnerable Parity multisig wallets into the WHG's wallet.
 
-NOTE: There are some small ETH transactions missing - I'll have to fix up the script to find these transactions.
+**NOTE**
+
+* There is a tx moving 1.9 ETH from the Dao.Casino multisig at 0x01dbb419d66be0d389fab88064493f1d698dc27a where the initiating account was 0x7ec74161ab8b8cb6d2c6ad317d9734a6056b8a52 - https://etherscan.io/tx/0xcd35dd43bba29abd528b25d55f72ac3e4ffd1bdd787ffe956e40347dd948e0d3 . It's not included in my results.
 
 <br />
 
@@ -49,6 +78,8 @@ The WHG token transactions are in [results/tokensRefunds-WHG.tsv](results/tokens
 My token transactions are in [results/tokens.tsv](results/tokens.tsv).
 
 A reconciliation of WHG's and my token transactions shows one small error in line 51 Monaco in the WHG's calculations - see [results/tokensReconcilation.xls](results/tokensReconcilation.xls).
+
+My latest token results for comparison with the WHG rescue data is in [results/multisig_rescue_tokens_bokkypoobah.csv](results/multisig_rescue_tokens_bokkypoobah.csv).
 
 <br />
 
@@ -60,6 +91,8 @@ LefterisJP's ethers transactions are in [results/ethers-LefterisJP.csv](results/
 
 A reconciliation of LefterisJP and my ethers transactions is available in [results/ethersReconciliation.xls](results/ethersReconciliation.xls) and the numbers match exactly.
 
+My latest ethers results for comparison with the WHG rescue data is in [results/multisig_rescue_ether_bokkypoobah.csv](results/multisig_rescue_ether_bokkypoobah.csv).
+
 <br />
 
 <hr />
@@ -67,12 +100,12 @@ A reconciliation of LefterisJP and my ethers transactions is available in [resul
 ## How Was The Parity Multisig Compromised?
 
 The first attack transaction [0xff261a49](https://etherscan.io/tx/0xff261a49c61861884d0509dac46ed67577a7d48cb73c2f51f149c0bf96b29660) 
-is a call to the `initWallet(...)` function with the new owner's address `b3764761e297d6f121e79c32a65829cd1ddb4d32` passed and the amount to
+was a call to the `initWallet(...)` function with the new owner's address `b3764761e297d6f121e79c32a65829cd1ddb4d32` passed and the amount to
 be stolen (`new BigNumber("5ac7391989a21040000",16).shift(-18)` = `26793`) as the `_daylimit`parameters:
 
 ![](images/AttackTransaction-20170721-130647.png)
 
-After the change in ownership, the hacker then sends a [second transaction](https://etherscan.io/tx/0x0e0d16475d2ac6a4802437a35a21776e5c9b681a77fef1693b0badbb6afdb083) to steal the funds:
+After the change in ownership, the hacker sent a [second transaction](https://etherscan.io/tx/0x0e0d16475d2ac6a4802437a35a21776e5c9b681a77fef1693b0badbb6afdb083) to steal the funds:
 
 ![](images/TransferTransaction-20170721-142845.png)
 
@@ -87,7 +120,7 @@ Following is the bit of code with the vulnerability (note the comment "construct
     }
 ```
 
-And this called the following code to change the ownership of the multisig contract:
+And `initWallet(...)` called the following `initMultiowned(...)` function to change the ownership of the multisig contract:
 
 ```javascript
   // constructor is given number of sigs required to do protected "onlymanyowners" transactions
@@ -106,11 +139,14 @@ And this called the following code to change the ownership of the multisig contr
 ```
 
 This code above was originally the constructor for the Ethereum Wallet multisig wallet contract (below). In Ethereum, the smart contract
-constructor code is executed when the contract is deployed to the blockchain, BUT the constructor code is not included in the deployed
-Ethereum Virtual Machine code. The mistake here was that the constructor was modified into a regular function (which is included in the
-deployed code), and no further checks were placed to restrict the function to only being executable by the wallet owner.
+constructor code is executed when a contract is deployed to the blockchain, BUT the constructor code is not included in the deployed
+Ethereum Virtual Machine code. 
 
-Following is the code from the [original Ethereum Wallet multisig](https://github.com/ethereum/dapp-bin/blob/master/wallet/wallet.sol) called `multiowned`, where the constructor has the same name `multiowned(...)`:
+The mistake here was that the constructor was modified to be a regular function (that is included in the
+deployed code), and no further checks were placed to restrict the function to only being executable by the existing wallet owner.
+
+Following is the code from the [original Ethereum Wallet multisig](https://github.com/ethereum/dapp-bin/blob/master/wallet/wallet.sol)
+called `contract multiowned`, where the constructor has the same name `multiowned(...)`:
 
 ```javascript
     // constructor is given number of sigs required to do protected "onlymanyowners" transactions
@@ -127,6 +163,8 @@ Following is the code from the [original Ethereum Wallet multisig](https://githu
         m_required = _required;
 }
 ``` 
+
+>br />
 
 The full source code for the buggy contract from [https://github.com/paritytech/parity/blob/4d08e7b0aec46443bf26547b17d10cb302672835/js/src/contracts/snippets/enhanced-wallet.sol](https://github.com/paritytech/parity/blob/4d08e7b0aec46443bf26547b17d10cb302672835/js/src/contracts/snippets/enhanced-wallet.sol) follows:
 
@@ -600,10 +638,19 @@ contract Wallet is WalletEvents {
 
 ## Further Information
 
-See [A Modified Version of a Common Multisig Had A Vulnerability - The WHG Took Action & Will Return the Funds](https://www.reddit.com/r/ethereum/comments/6obofq/a_modified_version_of_a_common_multisig_had_a/).
+See:
+
+* [A Modified Version of a Common Multisig Had A Vulnerability - The WHG Took Action & Will Return the Funds](https://www.reddit.com/r/ethereum/comments/6obofq/a_modified_version_of_a_common_multisig_had_a/)
+* [WHG Recovery Update - Multisig Replacement - Request for Review](https://www.reddit.com/r/ethereum/comments/6ojs1p/whg_recovery_update_multisig_replacement_request/)
+
+Responses by the teams affected by this hack:
+
+* æternity - [Parity Multisig Wallet Hack](https://blog.aeternity.com/parity-multisig-wallet-hack-47cc507d964d)
+* [Edgeless response to Parity hack](https://medium.com/@tomasdraksas/edgeless-response-to-parity-hack-3e35e20ba85c)
+* [Follow Up Statement From The Swarm City Core Team](https://press.swarm.city/follow-up-statement-from-the-swarm-city-core-team-3ab0f1274ad3)
 
 <br />
 
 <br />
 
-(c) BokkyPooBah / Bok Consulting Pty Ltd, White Hat Group and LefterisJP - July 21 2017
+(c) BokkyPooBah / Bok Consulting Pty Ltd and others - July 21 2017

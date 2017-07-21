@@ -1,6 +1,6 @@
 #!/bin/sh
 
-grep "TOKEN: " data2.txt | sed "s/TOKEN: /0x/" 
+grep "TOKEN: " data4.txt | sed "s/TOKEN: /0x/" 
   #  | \
     #  sed "s/0xe0b7927c4af23765cb51314a0e0521a9645f0e2a\s+1dba1131000664b884a1ba238464159892252d3a/0xe0b7927c4af23765cb51314a0e0521a9645f0e2a\tDGD/" | \
     #sed "s/0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0\s+1dba1131000664b884a1ba238464159892252d3a/0x86fa049857e0209aa7d9e616f7eb3b3b78ecfdb0\tEOS/" | \
