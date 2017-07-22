@@ -215,6 +215,8 @@ Ethereum Virtual Machine code.
 The mistake here was that the constructor was modified to be a regular function (that is included in the
 deployed code), and no further checks were placed to restrict the function to only being executable by the existing wallet owner.
 
+(There a bit more complication as the `delegatecall(...)` function was used to call the library code.) 
+
 Following is the code from the [original Ethereum Wallet multisig](https://github.com/ethereum/dapp-bin/blob/master/wallet/wallet.sol)
 called `contract multiowned`, where the constructor has the same name `multiowned(...)`:
 
@@ -712,6 +714,9 @@ See:
 
 * [A Modified Version of a Common Multisig Had A Vulnerability - The WHG Took Action & Will Return the Funds](https://www.reddit.com/r/ethereum/comments/6obofq/a_modified_version_of_a_common_multisig_had_a/)
 * [WHG Recovery Update - Multisig Replacement - Request for Review](https://www.reddit.com/r/ethereum/comments/6ojs1p/whg_recovery_update_multisig_replacement_request/)
+* [The Parity Wallet Hack Explained](https://blog.zeppelin.solutions/on-the-parity-wallet-multisig-hack-405a8c12e8f7)
+* [Balances & Parameters for the New Multisig Wallets - WHG Recovery Update - Request for Review](https://www.reddit.com/r/ethereum/comments/6oqgp3/balances_parameters_for_the_new_multisig_wallets/)
+* [https://github.com/Giveth/WHGBalanceVerification](https://github.com/Giveth/WHGBalanceVerification)
 
 Responses by the teams affected by this hack:
 
@@ -723,4 +728,4 @@ Responses by the teams affected by this hack:
 
 <br />
 
-(c) BokkyPooBah / Bok Consulting Pty Ltd and others - July 21 2017
+(c) BokkyPooBah / Bok Consulting Pty Ltd and others - July 22 2017. The MIT Licence.
