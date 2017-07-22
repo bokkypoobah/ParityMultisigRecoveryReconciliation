@@ -20,6 +20,7 @@ handed back to the original wallet owners.
 * [Reconciliation](#reconciliation)
   * [Tokens](#tokens)
   * [Ethers](#ethers)
+* [Smaller White Hat Group Rescue](#smaller-white-hat-group-rescue)
 * [How Was The Parity Multisig Compromised?](#how-was-the-parity-multisig-compromised)
 * [Further Information](#further-information)
 
@@ -116,13 +117,17 @@ Also note that my .csv file numbers have small rounding issues as I used MS Exce
 
 There was a smaller WHG rescue using the accounts [0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584](https://etherscan.io/address/0x1ff21eca1c3ba96ed53783ab9c92ffbf77862584) and [0xd1f27c48b948d49f3d098f499b8a1830d8a7e229](https://etherscan.io/address/0xd1f27c48b948d49f3d098f499b8a1830d8a7e229).
 
-The scripts and data is in the [smallerRescue](smallerRescue) folder and is included below as they are smaller in number of transactions:
+Following is an image of the second [0xd1f27c48b948d49f3d098f499b8a1830d8a7e229](https://etherscan.io/address/0xd1f27c48b948d49f3d098f499b8a1830d8a7e229) account holding the ethers and tokens totalling USD 1.4 million:
+
+![](images/SmallerWHGRescueAccount-20170722-220450.png)
+
+The scripts and data are in the [smallerRescue](smallerRescue) folder and the data is included below as they are small in number of transactions:
 
 <br />
 
 ### Ethers
 
-Also in [smallerRescue/smallerEthers.tsv](smallerRescue/smallerEthers.tsv):
+The transactions to rescue the ethers follow, also in [smallerRescue/smallerEthers.tsv](smallerRescue/smallerEthers.tsv):
 
 ```
 Wallet  Amount
@@ -147,7 +152,7 @@ Wallet  Amount
 
 ### Tokens
 
-Also in [smallerRescue/smallerTokens.tsv](smallerRescue/smallerTokens.tsv):
+The transactions to rescue the tokens follow, also in [smallerRescue/smallerTokens.tsv](smallerRescue/smallerTokens.tsv):
 
 ```
 TokenAddress    TokenSymbol Wallet  Amount
