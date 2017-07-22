@@ -6,6 +6,10 @@ USD 32 million in ethers (ETH) from the funds raised in crowdsales by Aeternity,
 The White Hat Group (WHG) scanned the balances for over 500 multisig wallets using the same vulnerable code, then used the same exploit
 to move the ETH and tokens from the wallets into their wallet for safekeeping.
 
+The main whitehat attack rescued ~ USD 80.459 million in ETH and ~ USD 84.433 million in tokens.
+Another smaller smaller whitehat attack rescued ~ USD 1.337 million in ETH and ~ USD 63,371 in tokens.
+The total amount rescued was approximately USD 166.29 million.
+
 The reconciliation below calculates the ETH and tokens that will be returned to their rightful owners in safer multisig wallets that are
 handed back to the original wallet owners.
 
