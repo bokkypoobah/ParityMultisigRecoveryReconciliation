@@ -68,6 +68,14 @@ Total gas cost for the last 2,000 transactions is 14.58969814 ETH. Etherscan onl
 
 ![](images/WhiteHatAccount-20170720-212053.png)
 
+### Update Jul 25 2017 02:39
+
+Further funds flowed into the WHG multisig totalling USD 200m made up of USD 77.5m in ETH and USD 132.4m in tokens:
+
+![](images/WHGAccount-ETH-20170725-023917.png)
+
+![](images/WHGAccount-Tokens-20170725-023930.png)
+
 <br />
 
 <hr />
@@ -186,9 +194,22 @@ Some of the accounts from the list above did manage to gain some ETH and tokens 
 
 * [0x002c3b196aabe0c4d6b56316e9cabd441a630242](https://etherscan.io/address/0x002c3b196aabe0c4d6b56316e9cabd441a630242#tokentxns) SNT 20,000,000 ~ USD 1.63 million sent to Bittrex
 * [0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45](https://etherscan.io/address/0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45) USD 74K of ETH and tokens
+* [0x75d27075d8d9aa87e54f05a07a52c5a117436cc7](https://etherscan.io/address/0x75d27075d8d9aa87e54f05a07a52c5a117436cc7#tokentxns) OMG 15,999.5 ~ USD 14.79k
 * [0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f](https://etherscan.io/address/0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f) USD 1.8K of ETH
 * [0x00c8d8201c5686e355bf5957902938bfc7c61376](https://etherscan.io/address/0x00c8d8201c5686e355bf5957902938bfc7c61376) USD 1K of ETH
+* [0x3241971ec3ae953d8ea2294c6a824c9a35aa9825](https://etherscan.io/address/0x3241971ec3ae953d8ea2294c6a824c9a35aa9825#internaltx) USD 1K of ETH
+* [0x07040f3ecf94c9a41b5674bd4e6f22ee7077b2df](https://etherscan.io/address/0x07040f3ecf94c9a41b5674bd4e6f22ee7077b2df#internaltx) USD 200 of ETH
+* [0x13370ca2e8426a82bcfcce21c97817a243c521cf](https://etherscan.io/address/0x13370ca2e8426a82bcfcce21c97817a243c521cf#internaltx) USD 115 of ETH
 * [0x3090b4d6858c3b4110b3df47928641890bea127d](https://etherscan.io/address/0x3090b4d6858c3b4110b3df47928641890bea127d) USD 100 of tokens
+* [0x32ef5500201277501f98a05ab3457ef6e5d20cdc](https://etherscan.io/address/0x32ef5500201277501f98a05ab3457ef6e5d20cdc#internaltx) USD 16 of ETH
+* [0x3090b4d6858c3b4110b3df47928641890bea127d](https://etherscan.io/address/0x3090b4d6858c3b4110b3df47928641890bea127d#internaltx) USD 0.50 of ETH
+* [0x1e3f49b5814cfee970d826623da2b98acd87df89](https://etherscan.io/address/0x1e3f49b5814cfee970d826623da2b98acd87df89#internaltx) small amounts
+* [0x297d64eaa76b6bcb44ded3ef4d24ae103faf8110](https://etherscan.io/address/0x297d64eaa76b6bcb44ded3ef4d24ae103faf8110#internaltx) small amounts
+* [0xf610752dd164f8e9b5ab6edf48aeb84224c0e4a9](https://etherscan.io/address/0xf610752dd164f8e9b5ab6edf48aeb84224c0e4a9#tokentxns) SAN 10
+
+And a quote from a Luke Anderson during a lecture (via Sam Brooks):
+
+> Even though you might feel like it's a game and you might have earned the crypto by exploiting a flaw in the 'system,' you're still stealing someone else's money. Don't be a dickhead.
 
 <br />
 
@@ -263,7 +284,7 @@ called `contract multiowned`, where the constructor has the same name `multiowne
 }
 ``` 
 
->br />
+<br />
 
 The full source code for the buggy contract from [https://github.com/paritytech/parity/blob/4d08e7b0aec46443bf26547b17d10cb302672835/js/src/contracts/snippets/enhanced-wallet.sol](https://github.com/paritytech/parity/blob/4d08e7b0aec46443bf26547b17d10cb302672835/js/src/contracts/snippets/enhanced-wallet.sol) follows:
 
@@ -743,7 +764,10 @@ See:
 * [WHG Recovery Update - Multisig Replacement - Request for Review](https://www.reddit.com/r/ethereum/comments/6ojs1p/whg_recovery_update_multisig_replacement_request/)
 * [The Parity Wallet Hack Explained](https://blog.zeppelin.solutions/on-the-parity-wallet-multisig-hack-405a8c12e8f7)
 * [Balances & Parameters for the New Multisig Wallets - WHG Recovery Update - Request for Review](https://www.reddit.com/r/ethereum/comments/6oqgp3/balances_parameters_for_the_new_multisig_wallets/)
+* [Rescued Multisig Owners Can Use a Smart Contract to Request Where the WHG Should Send the Funds](https://www.reddit.com/r/ethereum/comments/6p4luj/rescued_multisig_owners_can_use_a_smart_contract/)
+* [The WHG has Returned ~95% of the Funds and Now Hold Less Than $10 Million Worth of Rescued Funds](https://www.reddit.com/r/ethereum/comments/6povrc/the_whg_has_returned_95_of_the_funds_and_now_hold/)
 * [https://github.com/Giveth/WHGBalanceVerification](https://github.com/Giveth/WHGBalanceVerification)
+* [An In-Depth Look at the Parity Multisig Bug](http://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/)
 
 Responses by the teams affected by this hack:
 
