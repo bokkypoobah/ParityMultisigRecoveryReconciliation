@@ -25,6 +25,7 @@ handed back to the original wallet owners.
   * [Tokens](#tokens)
   * [Ethers](#ethers)
 * [Smaller White Hat Group Rescue](#smaller-white-hat-group-rescue)
+* [Attacking Accounts](#attacking-accounts)
 * [How Was The Parity Multisig Compromised?](#how-was-the-parity-multisig-compromised)
 * [Further Information](#further-information)
 
@@ -166,6 +167,28 @@ TokenAddress    TokenSymbol Wallet  Amount
 0xaaaf91d9b90df800df4f55c205fd6989c977e73a  TKN 0x4e2d0c204554c7f9cb1e3b3ac1e83dd3b4fc9622  100000000
 0xa645264c5603e96c3b0b078cdab68733794b0a71  MYST    0xd0f706bf4738732145344dc407d36b88859c3349  100000000
 ```
+
+<br />
+
+<hr />
+
+## Attacking Accounts
+
+A list of accounts that used the `initWallet(...)` attack, excluding the 3 WHG addresses follow:
+
+* [attackingAccounts/AttackingAccounts.tsv](attackingAccounts/AttackingAccounts.tsv) - sorted by blockNumber and transactionIndex
+* [attackingAccounts/AttackingAccountsSortedByAccount.tsv](attackingAccounts/AttackingAccountsSortedByAccount.tsv) - sorted by Account
+* [attackingAccounts/data1.txt](attackingAccounts/data1.txt) - raw data including the transaction information
+
+This will also include the accounts that the original multisig wallet owners used to try to gain back access to their multisig contracts.
+
+Some of the accounts from the list above did manage to gain some ETH and tokens through the attack:
+
+* [0x002c3b196aabe0c4d6b56316e9cabd441a630242](https://etherscan.io/address/0x002c3b196aabe0c4d6b56316e9cabd441a630242#tokentxns) SNT 20,000,000 ~ USD 1.63 million sent to Bittrex
+* [0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45](https://etherscan.io/address/0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45) USD 74K of ETH and tokens
+* [0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f](https://etherscan.io/address/0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f) USD 1.8K of ETH
+* [0x00c8d8201c5686e355bf5957902938bfc7c61376](https://etherscan.io/address/0x00c8d8201c5686e355bf5957902938bfc7c61376) USD 1K of ETH
+* [0x3090b4d6858c3b4110b3df47928641890bea127d](https://etherscan.io/address/0x3090b4d6858c3b4110b3df47928641890bea127d) USD 100 of tokens
 
 <br />
 
