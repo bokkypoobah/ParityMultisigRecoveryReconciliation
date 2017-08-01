@@ -192,8 +192,8 @@ This will also include the accounts that the original multisig wallet owners use
 
 Some of the accounts from the list above did manage to gain some ETH and tokens through the attack:
 
-* [0x002c3b196aabe0c4d6b56316e9cabd441a630242](https://etherscan.io/address/0x002c3b196aabe0c4d6b56316e9cabd441a630242#tokentxns) SNT 20,000,000 ~ USD 1.63 million sent to Bittrex
-* [0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45](https://etherscan.io/address/0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45) USD 74K of ETH and tokens
+* [0x002c3b196aabe0c4d6b56316e9cabd441a630242](https://etherscan.io/address/0x002c3b196aabe0c4d6b56316e9cabd441a630242#tokentxns) SNT 20,000,000 ~ USD 1 million sent to Bittrex
+* [0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45](https://etherscan.io/address/0xdfb692d180cae04bb29b6cd9878ede2ec8e79f45) USD 231K of ETH and tokens (180k of MYST)
 * [0x75d27075d8d9aa87e54f05a07a52c5a117436cc7](https://etherscan.io/address/0x75d27075d8d9aa87e54f05a07a52c5a117436cc7#tokentxns) OMG 15,999.5 ~ USD 14.79k
 * [0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f](https://etherscan.io/address/0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f) USD 1.8K of ETH
 * [0x00c8d8201c5686e355bf5957902938bfc7c61376](https://etherscan.io/address/0x00c8d8201c5686e355bf5957902938bfc7c61376) USD 1K of ETH
