@@ -197,6 +197,7 @@ Some of the accounts from the list above did manage to gain some ETH and tokens 
 * [0x75d27075d8d9aa87e54f05a07a52c5a117436cc7](https://etherscan.io/address/0x75d27075d8d9aa87e54f05a07a52c5a117436cc7#tokentxns) OMG 15,999.5 ~ USD 14.79k
 * [0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f](https://etherscan.io/address/0x35ec328b4a0bb5b370b5bbb112b0891d4688a77f) USD 1.8K of ETH
 * [0x00c8d8201c5686e355bf5957902938bfc7c61376](https://etherscan.io/address/0x00c8d8201c5686e355bf5957902938bfc7c61376) USD 1K of ETH
+  * This is a White Hat in the process of returning the funds to the owners - see [this](https://www.reddit.com/r/ethdev/comments/6qtu0r/returning_rescued_funds_post_deleted_by/) and [this](https://www.reddit.com/r/ethereum/comments/6qrjr5/the_whg_has_returned_100_of_the_rescued_funds_to/dkznoym/).
 * [0x3241971ec3ae953d8ea2294c6a824c9a35aa9825](https://etherscan.io/address/0x3241971ec3ae953d8ea2294c6a824c9a35aa9825#internaltx) USD 1K of ETH
 * [0x07040f3ecf94c9a41b5674bd4e6f22ee7077b2df](https://etherscan.io/address/0x07040f3ecf94c9a41b5674bd4e6f22ee7077b2df#internaltx) USD 200 of ETH
 * [0x13370ca2e8426a82bcfcce21c97817a243c521cf](https://etherscan.io/address/0x13370ca2e8426a82bcfcce21c97817a243c521cf#internaltx) USD 115 of ETH
@@ -766,6 +767,7 @@ See:
 * [Balances & Parameters for the New Multisig Wallets - WHG Recovery Update - Request for Review](https://www.reddit.com/r/ethereum/comments/6oqgp3/balances_parameters_for_the_new_multisig_wallets/)
 * [Rescued Multisig Owners Can Use a Smart Contract to Request Where the WHG Should Send the Funds](https://www.reddit.com/r/ethereum/comments/6p4luj/rescued_multisig_owners_can_use_a_smart_contract/)
 * [The WHG has Returned ~95% of the Funds and Now Hold Less Than $10 Million Worth of Rescued Funds](https://www.reddit.com/r/ethereum/comments/6povrc/the_whg_has_returned_95_of_the_funds_and_now_hold/)
+* [The WHG has Returned 100% of the Rescued Funds to their Rightful Owners](https://www.reddit.com/r/ethereum/comments/6qrjr5/the_whg_has_returned_100_of_the_rescued_funds_to/)
 * [https://github.com/Giveth/WHGBalanceVerification](https://github.com/Giveth/WHGBalanceVerification)
 * [An In-Depth Look at the Parity Multisig Bug](http://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/)
 
